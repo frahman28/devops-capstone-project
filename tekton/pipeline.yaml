@@ -17,6 +17,10 @@ spec:
       default: main
     - name: build-image
   tasks:
+    - name: clone
+      taskRef:
+        name: git-clone  # Assuming this is the name of your git clone task
+      resources: {}
     - name: lint
       workspaces:
         - name: source

@@ -19,8 +19,7 @@ spec:
   tasks:
     - name: clone
       taskRef:
-        name: git-clone  # Assuming this is the name of your git clone task
-      resources: {}
+        name: git-clone  
     - name: lint
       workspaces:
         - name: source
